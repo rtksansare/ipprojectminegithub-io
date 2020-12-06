@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front Page</title> 
+	<link rel="stylesheet" href="1st.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		var seconds=0;
+		function dispsecs()
+		{
+			seconds +=1;
+			document.getElementById("sec").innerText="This page will be redirect in " +seconds+ "seconds......";
+		}
+		setInterval(dispsecs,1000);
+
+		function redirect()
+		{
+			window.location="newsignupform.php";
+		}
+		setTimeout('redirect()',4000);
+	</script>
+</head>
+<body>
+	<center>
+	<div id="header1"></div>
+	<img src="1st.png" height="300" width="600"><br/></br>
+	<div id="sec"></div>
+	<img src="giphy.gif" height="100" width="100"/>
+	</center>
+</body>
+</html>
